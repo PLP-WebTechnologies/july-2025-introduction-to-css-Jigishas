@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>E-commerce Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=random" alt="Admin">
+                    <span>Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i> Products</a></li>
+                        <li><a href="#"><i class="fas fa-users"></i> Customers</a></li>
+                        <li><a href="#"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Content Area -->
+            <section class="main-content">
+                <!-- Metrics Cards -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <h3>Total Revenue</h3>
+                            <span class="metric-value">$24,532</span>
+                            <span class="metric-change positive">+12%</span>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <h3>Orders</h3>
+                            <span class="metric-value">1,258</span>
+                            <span class="metric-change positive">+8%</span>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <h3>Customers</h3>
+                            <span class="metric-value">3,642</span>
+                            <span class="metric-change positive">+5%</span>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-info">
+                            <h3>Conversion Rate</h3>
+                            <span class="metric-value">3.24%</span>
+                            <span class="metric-change negative">-1.2%</span>
+                        </div>
+                        <div class="metric-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>Revenue Overview</h3>
+                        <div class="chart-placeholder">
+                            <p>Revenue chart would be displayed here</p>
+                        </div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Sales by Category</h3>
+                        <div class="chart-placeholder">
+                            <p>Category chart would be displayed here</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Orders -->
+                <div class="orders-card">
+                    <div class="orders-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#ORD-0215</td>
+                                <td>John Smith</td>
+                                <td>Jul 12, 2023</td>
+                                <td>$235.89</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0214</td>
+                                <td>Sarah Johnson</td>
+                                <td>Jul 11, 2023</td>
+                                <td>$478.25</td>
+                                <td><span class="status shipped">Shipped</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0213</td>
+                                <td>Michael Brown</td>
+                                <td>Jul 10, 2023</td>
+                                <td>$124.99</td>
+                                <td><span class="status processing">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0212</td>
+                                <td>Emily Davis</td>
+                                <td>Jul 09, 2023</td>
+                                <td>$789.50</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>#ORD-0211</td>
+                                <td>Robert Wilson</td>
+                                <td>Jul 08, 2023</td>
+                                <td>$356.75</td>
+                                <td><span class="status cancelled">Cancelled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
